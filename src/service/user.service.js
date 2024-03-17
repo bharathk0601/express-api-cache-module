@@ -19,6 +19,8 @@ const getUser = async (id, userId) => {
     if (userId) {
       return item.userId == userId;
     }
+
+    return false;
   });
 
   return result;
