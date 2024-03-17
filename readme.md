@@ -2,7 +2,7 @@
 * Midddleware: (src/middlewares/cache.middleware.js)
 * Cache's the API response for the specified duration (default 1 day | 60 * 60 * 24).
 * Here Redis is used for cacheing.
-* For the current request parameter's if the value is present in redis cache then it will sent in the response.
+* For the current request parameter's if the value is present in redis cache then it will be returned as response directly from middleware.
 * If the value is not present in cache, then it will go to the actual business logic and while returning the response if the statusCode is 200, then 
 response data will be cached (by the cache middleware) for the specified duartion.
 * subsequent request will read the data from cache.
