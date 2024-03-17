@@ -4,7 +4,7 @@ const { DEFAULT_API_CACHE_TTL } = require('../constants/contants');
 
 /**
  * 
- * @param {number} ttl - in seconds
+ * @param {number} ttl - in seconds.
  * @returns {Function}
  */
 function cacheMiddleware(ttl = DEFAULT_API_CACHE_TTL) {
